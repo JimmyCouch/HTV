@@ -1,0 +1,673 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'e:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'e:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.3.8
+3 info using node@v0.10.18
+4 warn package.json hawkeyeTV@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'e:\\Documents\\git\\hawkeyeTV',
+6 verbose install   [ 'sqlite3', 'bcrypt', 'underscore', 'hbs', 'express', 'socket.io' ] ]
+7 info preinstall hawkeyeTV@1.0.0
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping sqlite3@~2.x.x e:\Documents\git\hawkeyeTV
+10 verbose cache add [ 'bcrypt@~0.7.7', null ]
+11 verbose cache add name=undefined spec="bcrypt@~0.7.7" args=["bcrypt@~0.7.7",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'bcrypt@~0.7.7',
+12 verbose parsed url   path: 'bcrypt@~0.7.7',
+12 verbose parsed url   href: 'bcrypt@~0.7.7' }
+13 verbose cache add name="bcrypt" spec="~0.7.7" args=["bcrypt","~0.7.7"]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: '~0.7.7',
+14 verbose parsed url   path: '~0.7.7',
+14 verbose parsed url   href: '~0.7.7' }
+15 verbose addNamed [ 'bcrypt', '~0.7.7' ]
+16 verbose addNamed [ null, '>=0.7.7-0 <0.8.0-0' ]
+17 verbose already installed skipping underscore@~1.5.2 e:\Documents\git\hawkeyeTV
+18 verbose cache add [ 'hbs@~2.4.0', null ]
+19 verbose cache add name=undefined spec="hbs@~2.4.0" args=["hbs@~2.4.0",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'hbs@~2.4.0',
+20 verbose parsed url   path: 'hbs@~2.4.0',
+20 verbose parsed url   href: 'hbs@~2.4.0' }
+21 verbose cache add name="hbs" spec="~2.4.0" args=["hbs","~2.4.0"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '~2.4.0',
+22 verbose parsed url   path: '~2.4.0',
+22 verbose parsed url   href: '~2.4.0' }
+23 verbose addNamed [ 'hbs', '~2.4.0' ]
+24 verbose addNamed [ null, '>=2.4.0-0 <2.5.0-0' ]
+25 verbose already installed skipping express@~3.x.x e:\Documents\git\hawkeyeTV
+26 verbose already installed skipping socket.io@~0.9.x e:\Documents\git\hawkeyeTV
+27 silly lockFile 554e4d6f-bcrypt-0-7-7 bcrypt@~0.7.7
+28 verbose lock bcrypt@~0.7.7 E:\AppData\npm-cache\554e4d6f-bcrypt-0-7-7.lock
+29 silly lockFile 4a3c2f5a-hbs-2-4-0 hbs@~2.4.0
+30 verbose lock hbs@~2.4.0 E:\AppData\npm-cache\4a3c2f5a-hbs-2-4-0.lock
+31 silly addNameRange { name: 'bcrypt', range: '>=0.7.7-0 <0.8.0-0', hasData: false }
+32 silly addNameRange { name: 'hbs', range: '>=2.4.0-0 <2.5.0-0', hasData: false }
+33 verbose url raw hbs
+34 verbose url resolving [ 'https://registry.npmjs.org/', './hbs' ]
+35 verbose url resolved https://registry.npmjs.org/hbs
+36 info trying registry request attempt 1 at 10:56:08
+37 verbose etag "54SRNLV642JS5BGFAFTB2KKRJ"
+38 http GET https://registry.npmjs.org/hbs
+39 verbose url raw bcrypt
+40 verbose url resolving [ 'https://registry.npmjs.org/', './bcrypt' ]
+41 verbose url resolved https://registry.npmjs.org/bcrypt
+42 info trying registry request attempt 1 at 10:56:08
+43 verbose etag "ENJHWKAPQFD667QIBE6NPAAD5"
+44 http GET https://registry.npmjs.org/bcrypt
+45 http 304 https://registry.npmjs.org/bcrypt
+46 silly registry.get cb [ 304,
+46 silly registry.get   { date: 'Mon, 10 Feb 2014 16:56:06 GMT',
+46 silly registry.get     server: 'Apache',
+46 silly registry.get     connection: 'Keep-Alive',
+46 silly registry.get     'keep-alive': 'timeout=10, max=50',
+46 silly registry.get     etag: '"ENJHWKAPQFD667QIBE6NPAAD5"',
+46 silly registry.get     'cache-control': 'max-age=1',
+46 silly registry.get     vary: 'Accept' } ]
+47 verbose etag bcrypt from cache
+48 silly addNameRange number 2 { name: 'bcrypt', range: '>=0.7.7-0 <0.8.0-0', hasData: true }
+49 silly addNameRange versions [ 'bcrypt',
+49 silly addNameRange   [ '0.1.2',
+49 silly addNameRange     '0.2.0',
+49 silly addNameRange     '0.2.1',
+49 silly addNameRange     '0.1.3',
+49 silly addNameRange     '0.2.2',
+49 silly addNameRange     '0.2.3',
+49 silly addNameRange     '0.2.4',
+49 silly addNameRange     '0.3.0',
+49 silly addNameRange     '0.3.1',
+49 silly addNameRange     '0.3.2',
+49 silly addNameRange     '0.4.0',
+49 silly addNameRange     '0.4.1',
+49 silly addNameRange     '0.5.0',
+49 silly addNameRange     '0.6.0',
+49 silly addNameRange     '0.7.0',
+49 silly addNameRange     '0.7.1',
+49 silly addNameRange     '0.7.2',
+49 silly addNameRange     '0.7.3',
+49 silly addNameRange     '0.7.4',
+49 silly addNameRange     '0.7.5',
+49 silly addNameRange     '0.7.6',
+49 silly addNameRange     '0.7.7' ] ]
+50 verbose addNamed [ 'bcrypt', '0.7.7' ]
+51 verbose addNamed [ '0.7.7', '0.7.7' ]
+52 silly lockFile ad2a9212-bcrypt-0-7-7 bcrypt@0.7.7
+53 verbose lock bcrypt@0.7.7 E:\AppData\npm-cache\ad2a9212-bcrypt-0-7-7.lock
+54 silly lockFile ad2a9212-bcrypt-0-7-7 bcrypt@0.7.7
+55 silly lockFile ad2a9212-bcrypt-0-7-7 bcrypt@0.7.7
+56 silly lockFile 554e4d6f-bcrypt-0-7-7 bcrypt@~0.7.7
+57 silly lockFile 554e4d6f-bcrypt-0-7-7 bcrypt@~0.7.7
+58 http 304 https://registry.npmjs.org/hbs
+59 silly registry.get cb [ 304,
+59 silly registry.get   { date: 'Mon, 10 Feb 2014 16:56:07 GMT',
+59 silly registry.get     server: 'Apache',
+59 silly registry.get     connection: 'Keep-Alive',
+59 silly registry.get     'keep-alive': 'timeout=10, max=50',
+59 silly registry.get     etag: '"54SRNLV642JS5BGFAFTB2KKRJ"',
+59 silly registry.get     'cache-control': 'max-age=1',
+59 silly registry.get     vary: 'Accept' } ]
+60 verbose etag hbs from cache
+61 silly addNameRange number 2 { name: 'hbs', range: '>=2.4.0-0 <2.5.0-0', hasData: true }
+62 silly addNameRange versions [ 'hbs',
+62 silly addNameRange   [ '0.0.2-1',
+62 silly addNameRange     '0.0.2-2',
+62 silly addNameRange     '0.0.2-3',
+62 silly addNameRange     '0.0.3',
+62 silly addNameRange     '0.0.3-1',
+62 silly addNameRange     '0.0.3-2',
+62 silly addNameRange     '0.0.3-3',
+62 silly addNameRange     '0.0.3-4',
+62 silly addNameRange     '0.0.4',
+62 silly addNameRange     '0.0.5',
+62 silly addNameRange     '0.0.6',
+62 silly addNameRange     '0.0.7',
+62 silly addNameRange     '1.0.0',
+62 silly addNameRange     '1.0.1',
+62 silly addNameRange     '1.0.2',
+62 silly addNameRange     '1.0.3',
+62 silly addNameRange     '1.0.4',
+62 silly addNameRange     '1.0.5',
+62 silly addNameRange     '1.0.6',
+62 silly addNameRange     '1.0.7',
+62 silly addNameRange     '1.0.8',
+62 silly addNameRange     '1.0.9',
+62 silly addNameRange     '2.0.0',
+62 silly addNameRange     '2.0.1',
+62 silly addNameRange     '2.0.2',
+62 silly addNameRange     '2.1.0',
+62 silly addNameRange     '2.3.0',
+62 silly addNameRange     '2.3.1',
+62 silly addNameRange     '2.4.0' ] ]
+63 verbose addNamed [ 'hbs', '2.4.0' ]
+64 verbose addNamed [ '2.4.0', '2.4.0' ]
+65 silly lockFile b8bfdcc3-hbs-2-4-0 hbs@2.4.0
+66 verbose lock hbs@2.4.0 E:\AppData\npm-cache\b8bfdcc3-hbs-2-4-0.lock
+67 silly lockFile b8bfdcc3-hbs-2-4-0 hbs@2.4.0
+68 silly lockFile b8bfdcc3-hbs-2-4-0 hbs@2.4.0
+69 silly lockFile 4a3c2f5a-hbs-2-4-0 hbs@~2.4.0
+70 silly lockFile 4a3c2f5a-hbs-2-4-0 hbs@~2.4.0
+71 silly resolved [ { name: 'bcrypt',
+71 silly resolved     description: 'A bcrypt library for NodeJS.',
+71 silly resolved     keywords:
+71 silly resolved      [ 'bcrypt',
+71 silly resolved        'password',
+71 silly resolved        'auth',
+71 silly resolved        'authentication',
+71 silly resolved        'encryption',
+71 silly resolved        'crypt',
+71 silly resolved        'crypto' ],
+71 silly resolved     main: './bcrypt',
+71 silly resolved     version: '0.7.7',
+71 silly resolved     author: { name: 'Nick Campbell', url: 'http://github.com/ncb000gt' },
+71 silly resolved     engines: { node: '>= 0.6.0' },
+71 silly resolved     repository:
+71 silly resolved      { type: 'git',
+71 silly resolved        url: 'http://github.com/ncb000gt/node.bcrypt.js.git' },
+71 silly resolved     licenses: [ [Object] ],
+71 silly resolved     bugs: { url: 'http://github.com/ncb000gt/node.bcrypt.js/issues' },
+71 silly resolved     scripts:
+71 silly resolved      { test: 'node-gyp configure build && nodeunit test',
+71 silly resolved        install: 'node-gyp rebuild' },
+71 silly resolved     dependencies: { bindings: '1.0.0' },
+71 silly resolved     devDependencies: { nodeunit: '>=0.6.4' },
+71 silly resolved     contributors:
+71 silly resolved      [ [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object],
+71 silly resolved        [Object] ],
+71 silly resolved     gypfile: true,
+71 silly resolved     readme: '# node.bcrypt.js\n\n[![Build Status](https://secure.travis-ci.org/ncb000gt/node.bcrypt.js.png)](http://travis-ci.org/#!/ncb000gt/node.bcrypt.js) \n\nLib to help you hash passwords.\n[bcrypt on wikipedia][bcryptwiki]\n\nCatalyst for this module: [How To Safely Store A Password][codahale]\n\n## If You Are Submitting Bugs/Issues\n\nBecause we can\'t magically know what you are doing to expose an issue, it is best if you provide a snippet of code. This snippet need not include your secret sauce, but it must replicate the issue you are describing. The issues that get closed without resolution tend to be the ones without code examples. Thanks.\n\n\n## Version Compatability\n\n<table>\n<tr>\n<td>Node Ver</td><td>Bcrypt Version</td>\n</tr>\n<tr>\n<td>&lt;= 0.4.x</td><td>&lt;= 0.4.x</td>\n</tr>\n<tr>\n<td>&gt;= 0.6.x</td><td>&gt;= 0.5.x</td>\n</tr>\n</table>\n\nWindows users should make sure to have at least node 0.8.5 installed and version >= 0.7.1 of this module.  \n`node-gyp` only works with stable/released versions of node. Since the `bcrypt` module uses `node-gyp` to build and install you\'ll need a stable version of node to use bcrypt. If you do not you\'ll likely see an error that starts with:\n\n    gyp ERR! stack Error: "pre" versions of node cannot be installed, use the --nodedir flag instead\n\n\n\n## Security Issues/Concerns\n\nAs should be the case with any security tool, this library should be scrutinized by anyone using it. If you find or suspect an issue with the code- please bring it to my attention and I\'ll spend some time trying to make sure that this tool is as secure as possible.\n\nTo make it easier for people using this tool to analyze what has been surveyed, here is a list of BCrypt related security issues/concerns as they\'ve come up.\n\n* An [issue with passwords][jtr] was found with a version of the Blowfish algorithm developed for John the Ripper. This is not present in the OpenBSD version and is thus not a problem for this module. HT [zooko][zooko].\n\n## Dependencies\n\n* NodeJS\n* OpenSSL (Development Libraries (header files) for compilation)\n * For Windows you\'ll need http://slproweb.com/products/Win32OpenSSL.html installed to the default location of `C:\\OpenSSL-Win32`\n  * When installing OpenSSL, you must tell it to put DLLs in `The Windows system directory` to avoid `The specified module could not be found.` errors.\n  * Please note that for this to build properly you\'ll need the Normal version of OpenSSL-Win<arch>, not the Light version. The reason for this is that we need to be able to compile the code using the header files that exist in the Normal version.\n  * For 64 bit use the 64 bit version and install to `C:\\OpenSSL-Win64`\n* `node-gyp`\n * Please check the dependencies for this tool at: https://github.com/TooTallNate/node-gyp/\n  * Windows users will need the options for c# and c++ installed with their visual studio instance.\n  * Python 2.x\n\n## Install via NPM\n```\nnpm install bcrypt\n```\n\n## Usage\n\n### async (recommended)\n\nTo hash a password:\n\n```javascript\nvar bcrypt = require(\'bcrypt\');\nbcrypt.genSalt(10, function(err, salt) {\n    bcrypt.hash("B4c0/\\/", salt, function(err, hash) {\n        // Store hash in your password DB.\n    });\n});\n```\n\nTo check a password:\n\n```javascript\n// Load hash from your password DB.\nbcrypt.compare("B4c0/\\/", hash, function(err, res) {\n    // res == true\n});\nbcrypt.compare("not_bacon", hash, function(err, res) {\n    // res = false\n});\n```\n\nAuto-gen a salt and hash:\n\n```javascript\nbcrypt.hash(\'bacon\', 8, function(err, hash) {\n});\n```\n\n\n### sync\n\nTo hash a password:\n\n```javascript\nvar bcrypt = require(\'bcrypt\');\nvar salt = bcrypt.genSaltSync(10);\nvar hash = bcrypt.hashSync("B4c0/\\/", salt);\n// Store hash in your password DB.\n```\n\nTo check a password:\n\n```javascript\n// Load hash from your password DB.\nbcrypt.compareSync("B4c0/\\/", hash); // true\nbcrypt.compareSync("not_bacon", hash); // false\n```\n\nAuto-gen a salt and hash:\n\n```javascript\nvar hash = bcrypt.hashSync(\'bacon\', 8);\n```\n\n## API\n\n`BCrypt.`\n\n  * `genSaltSync(rounds, seed_length)`\n    * `rounds` - [OPTIONAL] - the number of rounds to process the data for. (default - 10)\n    * `seed_length` - [OPTIONAL] - RAND_bytes wants a length. to make that a bit flexible, you can specify a seed_length. (default - 20)\n  * `genSalt(rounds, seed_length, cb)`\n    * `rounds` - [OPTIONAL] - the number of rounds to process the data for. (default - 10)\n    * `seed_length` - [OPTIONAL] - RAND_bytes wants a length. to make that a bit flexible, you can specify a seed_length. (default - 20)\n    * `cb` - [REQUIRED] - a callback to be fired once the salt has been generated. uses eio making it asynchronous.\n      * `err` - First parameter to the callback detailing any errors.\n      * `salt` - Second parameter to the callback providing the generated salt.\n  * `hashSync(data, salt)`\n    * `data` - [REQUIRED] - the data to be encrypted.\n    * `salt` - [REQUIRED] - the salt to be used in encryption.\n  * `hash(data, salt, cb)`\n    * `data` - [REQUIRED] - the data to be encrypted.\n    * `salt` - [REQUIRED] - the salt to be used to hash the password. if specified as a number then a salt will be generated and used (see examples).\n    * `cb` - [REQUIRED] - a callback to be fired once the data has been encrypted. uses eio making it asynchronous.\n      * `err` - First parameter to the callback detailing any errors.\n      * `encrypted` - Second parameter to the callback providing the encrypted form.\n  * `compareSync(data, encrypted)`\n    * `data` - [REQUIRED] - data to compare.\n    * `encrypted` - [REQUIRED] - data to be compared to.\n  * `compare(data, encrypted, cb)`\n    * `data` - [REQUIRED] - data to compare.\n    * `encrypted` - [REQUIRED] - data to be compared to.\n    * `cb` - [REQUIRED] - a callback to be fired once the data has been compared. uses eio making it asynchronous.\n      * `err` - First parameter to the callback detailing any errors.\n      * `same` - Second parameter to the callback providing whether the data and encrypted forms match [true | false].\n  * `getRounds(encrypted)` - return the number of rounds used to encrypt a given hash\n    * `encrypted` - [REQUIRED] - hash from which the number of rounds used should be extracted.\n\n\n## Hash Info\n\nThe characters that comprise the resultant hash are `./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$`.\n\n## Testing\n\nIf you create a pull request, tests better pass :)\n\n```\nnpm install\nnpm test\n```\n\n## Credits\n\nThe code for this comes from a few sources:\n\n* blowfish.cc - OpenBSD\n* bcrypt.cc - OpenBSD\n* bcrypt::gen_salt - [gen_salt inclusion to bcrypt][bcryptgs]\n* bcrypt_node.cc - me\n\n## Contributors\n\n* [Antonio Salazar Cardozo][shadowfiend] - Early MacOS X support (when we used libbsd)\n* [Ben Glow][pixelglow] - Fixes for thread safety with async calls\n* [Van Nguyen][thegoleffect] - Found a timing attack in the comparator\n* [NewITFarmer][newitfarmer] - Initial Cygwin support\n* [David Trejo][dtrejo] - packaging fixes\n* [Alfred Westerveld][alfredwesterveld] - packaging fixes\n* [Vincent Côté-Roy][vincentr] - Testing around concurrency issues\n* [Lloyd Hilaiel][lloyd] - Documentation fixes\n* [Roman Shtylman][shtylman] - Code refactoring, general rot reduction, compile options, better memory management with delete and new, and an upgrade to libuv over eio/ev.\n* [Vadim Graboys][vadimg] - Code changes to support 0.5.5+\n* [Ben Noordhuis][bnoordhuis] - Fixed a thread safety issue in nodejs that was perfectly mappable to this module.\n* [Nate Rajlich][tootallnate] - Bindings and build process.\n* [Sean McArthur][seanmonstar] - Windows Support\n* [Fanie Oosthuysen][weareu] - Windows Support\n\n## License\nUnless stated elsewhere, file headers or otherwise, the license as stated in the LICENSE file.\n\n[bcryptwiki]: http://en.wikipedia.org/wiki/Bcrypt\n[bcryptgs]: http://mail-index.netbsd.org/tech-crypto/2002/05/24/msg000204.html\n[codahale]: http://codahale.com/how-to-safely-store-a-password/\n[gh13]: https://github.com/ncb000gt/node.bcrypt.js/issues/13\n[jtr]: http://www.openwall.com/lists/oss-security/2011/06/20/2\n\n[shadowfiend]:https://github.com/Shadowfiend\n[thegoleffect]:https://github.com/thegoleffect\n[pixelglow]:https://github.com/pixelglow\n[dtrejo]:https://github.com/dtrejo\n[alfredwesterveld]:https://github.com/alfredwesterveld\n[newitfarmer]:https://github.com/newitfarmer\n[zooko]:https://twitter.com/zooko\n[vincentr]:https://twitter.com/vincentcr\n[lloyd]:https://github.com/lloyd\n[shtylman]:https://github.com/shtylman\n[vadimg]:https://github.com/vadimg\n[bnoordhuis]:https://github.com/bnoordhuis\n[tootallnate]:https://github.com/tootallnate\n[seanmonstar]:https://github.com/seanmonstar\n[weareu]:https://github.com/weareu\n',
+71 silly resolved     readmeFilename: 'README.md',
+71 silly resolved     _id: 'bcrypt@0.7.7',
+71 silly resolved     _from: 'bcrypt@~0.7.7' },
+71 silly resolved   { name: 'hbs',
+71 silly resolved     description: 'Express.js template engine plugin for Handlebars',
+71 silly resolved     version: '2.4.0',
+71 silly resolved     homepage: 'https://github.com/donpark/hbs',
+71 silly resolved     author:
+71 silly resolved      { name: 'Don Park',
+71 silly resolved        email: 'donpark@docuverse.com',
+71 silly resolved        url: 'http://blog.docuverse.com' },
+71 silly resolved     main: 'lib/hbs.js',
+71 silly resolved     directories: { lib: './lib' },
+71 silly resolved     dependencies: { handlebars: '1.0.12', walk: '2.2.1' },
+71 silly resolved     devDependencies: { mocha: '1.6.0', npm: '1.3.6', request: '2.25.0' },
+71 silly resolved     scripts: { test: 'mocha' },
+71 silly resolved     engines: { node: '>= 0.4.0' },
+71 silly resolved     repository: { type: 'git', url: 'git://github.com/donpark/hbs.git' },
+71 silly resolved     readme: '# hbs [![Build Status](https://secure.travis-ci.org/donpark/hbs.png)](http://travis-ci.org/donpark/hbs) #\n\n[Express.js](http://github.com/visionmedia/express) view engine for\n[handlebars.js](http://github.com/wycats/handlebars.js)\n\n## Install ##\n\n```\nnpm install hbs\n```\n\n## Use ##\n\nUsing *hbs* as the default view engine requires just one line of code in your app setup. This will render `.hbs` files when `res.render` is called.\n\n```javascript\napp.set(\'view engine\', \'hbs\');\n```\n\nTo use a different extension (i.e. html) for your template files:\n\n```javascript\napp.set(\'view engine\', \'html\');\napp.engine(\'html\', require(\'hbs\').__express);\n```\n\n## Helpers and Partials ##\n\nhbs exposes the `registerHelper` and `registerPartial` method from handlebars.\n\n```javascript\nvar hbs = require(\'hbs\');\n\nhbs.registerHelper(\'helper_name\', function(...) { ... });\nhbs.registerPartial(\'partial_name\', \'partial value\');\n```\n\nFor convenience, `registerPartials` provides a quick way to load all partials from a specific directory:\n\n```javascript\nvar hbs = require(\'hbs\');\n\nhbs.registerPartials(__dirname + \'/views/partials\');\n```\n\nPartials that are loaded from a directory are named based on their filename, where spaces and hyphens are replaced with an underscore character:\n\n```\ntemplate.html      -> {{> template}}\ntemplate 2.html    -> {{> template_2}}\nlogin view.hbs     -> {{> login_view}}\ntemplate-file.html -> {{> template_file}}\n```\n\nSee the [handlebars.js](http://github.com/wycats/handlebars.js) README and docs for more information.\n\n## handlebars ##\n\nThe handlebars require used by hbs can be accessed via the `handlebars` property on the `hbs` module.\n\nIf you wish to use handlebars methods like `SafeString` please do so on this property. Do not register helpers or partials in this way.\n\n```\n// hbs.handlebars is the handlebars module\nhbs.handlebars === require(\'handlebars\');\n```\n\n## Recipes ##\n\n### more than one instance ###\nYou can create isolated instances of hbs using the `create()` function on the module object.\n\n```\nvar hbs = require(\'hbs\');\n\nvar instance1 = hbs.create();\nvar instance2 = hbs.create();\n\napp.engine(\'html\', instance1.__express);\napp.engine(\'hbs\', instance2.__express);\n```\n\nEach instance has the same methods/properties as the `hbs` module object. The module object is actually just an instance created for you automatically.\n\n### extra scripts or styles ##\nSometimes it is useful to have custom scripts or stylesheets on your pages. Handlebars does not provide a way to import or extend a template, but through the use of helpers you can create a similar result.\n\nWe can take advantage of the fact that our body template is processed before the layout template. Knowing this, we can create two helpers `block` and `extend` which can be used to \'inject\' custom stylesheets or scripts into the layout template. The `block` helper will act as a placeholder for values specified in earlier `extend` helpers.\n\nSee examples/extend for a working example. Note how the index.hbs file defines extra stylesheets and scripts to be injected into the layout. They are put into the head section and at the end of the body respectively. If this was not done, the stylesheet would be in the body and the script would print `foo bar` too soon.\n\n',
+71 silly resolved     readmeFilename: 'Readme.md',
+71 silly resolved     bugs: { url: 'https://github.com/donpark/hbs/issues' },
+71 silly resolved     _id: 'hbs@2.4.0',
+71 silly resolved     _from: 'hbs@~2.4.0' } ]
+72 info install bcrypt@0.7.7 into e:\Documents\git\hawkeyeTV
+73 info install hbs@2.4.0 into e:\Documents\git\hawkeyeTV
+74 info installOne bcrypt@0.7.7
+75 info installOne hbs@2.4.0
+76 info e:\Documents\git\hawkeyeTV\node_modules\bcrypt unbuild
+77 info e:\Documents\git\hawkeyeTV\node_modules\hbs unbuild
+78 verbose tar unpack E:\AppData\npm-cache\bcrypt\0.7.7\package.tgz
+79 silly lockFile d3f73b37-it-hawkeyeTV-node-modules-bcrypt tar://e:\Documents\git\hawkeyeTV\node_modules\bcrypt
+80 verbose lock tar://e:\Documents\git\hawkeyeTV\node_modules\bcrypt E:\AppData\npm-cache\d3f73b37-it-hawkeyeTV-node-modules-bcrypt.lock
+81 silly lockFile d02ff2a1-m-cache-bcrypt-0-7-7-package-tgz tar://E:\AppData\npm-cache\bcrypt\0.7.7\package.tgz
+82 verbose lock tar://E:\AppData\npm-cache\bcrypt\0.7.7\package.tgz E:\AppData\npm-cache\d02ff2a1-m-cache-bcrypt-0-7-7-package-tgz.lock
+83 verbose tar unpack E:\AppData\npm-cache\hbs\2.4.0\package.tgz
+84 silly lockFile 7ba92b97-s-git-hawkeyeTV-node-modules-hbs tar://e:\Documents\git\hawkeyeTV\node_modules\hbs
+85 verbose lock tar://e:\Documents\git\hawkeyeTV\node_modules\hbs E:\AppData\npm-cache\7ba92b97-s-git-hawkeyeTV-node-modules-hbs.lock
+86 silly lockFile 691ff6a3--npm-cache-hbs-2-4-0-package-tgz tar://E:\AppData\npm-cache\hbs\2.4.0\package.tgz
+87 verbose lock tar://E:\AppData\npm-cache\hbs\2.4.0\package.tgz E:\AppData\npm-cache\691ff6a3--npm-cache-hbs-2-4-0-package-tgz.lock
+88 silly gunzTarPerm modes [ '755', '644' ]
+89 silly gunzTarPerm modes [ '755', '644' ]
+90 silly gunzTarPerm extractEntry package.json
+91 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+92 silly gunzTarPerm extractEntry package.json
+93 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+94 silly gunzTarPerm extractEntry .npmignore
+95 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+96 silly gunzTarPerm extractEntry README.md
+97 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+98 silly gunzTarPerm extractEntry .npmignore
+99 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+100 silly gunzTarPerm extractEntry LICENSE
+101 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+102 silly gunzTarPerm extractEntry .gitmodules
+103 silly gunzTarPerm modified mode [ '.gitmodules', 438, 420 ]
+104 silly gunzTarPerm extractEntry .travis.yml
+105 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+106 silly gunzTarPerm extractEntry LICENSE
+107 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+108 silly gunzTarPerm extractEntry bcrypt.js
+109 silly gunzTarPerm modified mode [ 'bcrypt.js', 438, 420 ]
+110 silly gunzTarPerm extractEntry examples/extend/app.js
+111 silly gunzTarPerm modified mode [ 'examples/extend/app.js', 438, 420 ]
+112 silly gunzTarPerm extractEntry examples/extend/public/css/index.css
+113 silly gunzTarPerm modified mode [ 'examples/extend/public/css/index.css', 438, 420 ]
+114 silly gunzTarPerm extractEntry CHANGELOG
+115 silly gunzTarPerm modified mode [ 'CHANGELOG', 438, 420 ]
+116 silly gunzTarPerm extractEntry examples/extend/public/css/style.css
+117 silly gunzTarPerm modified mode [ 'examples/extend/public/css/style.css', 438, 420 ]
+118 silly gunzTarPerm extractEntry examples/extend/views/index.hbs
+119 silly gunzTarPerm modified mode [ 'examples/extend/views/index.hbs', 438, 420 ]
+120 silly gunzTarPerm extractEntry examples/async_compare.js
+121 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 438, 420 ]
+122 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+123 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 438, 420 ]
+124 silly gunzTarPerm extractEntry examples/extend/views/layout.hbs
+125 silly gunzTarPerm modified mode [ 'examples/extend/views/layout.hbs', 438, 420 ]
+126 silly gunzTarPerm extractEntry examples/partial/app.js
+127 silly gunzTarPerm modified mode [ 'examples/partial/app.js', 438, 420 ]
+128 silly gunzTarPerm extractEntry .travis.yml
+129 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+130 silly gunzTarPerm extractEntry Makefile
+131 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+132 silly gunzTarPerm extractEntry examples/partial/public/css/style.css
+133 silly gunzTarPerm modified mode [ 'examples/partial/public/css/style.css', 438, 420 ]
+134 silly gunzTarPerm extractEntry examples/partial/views/index.hbs
+135 silly gunzTarPerm modified mode [ 'examples/partial/views/index.hbs', 438, 420 ]
+136 silly gunzTarPerm extractEntry binding.gyp
+137 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+138 silly gunzTarPerm extractEntry src/bcrypt.cc
+139 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 438, 420 ]
+140 silly gunzTarPerm extractEntry examples/partial/views/layout.hbs
+141 silly gunzTarPerm modified mode [ 'examples/partial/views/layout.hbs', 438, 420 ]
+142 silly gunzTarPerm extractEntry examples/partial/views/partial.hbs
+143 silly gunzTarPerm modified mode [ 'examples/partial/views/partial.hbs', 438, 420 ]
+144 silly gunzTarPerm extractEntry examples/partial/views/partials/partial1.html
+145 silly gunzTarPerm modified mode [ 'examples/partial/views/partials/partial1.html', 438, 420 ]
+146 silly gunzTarPerm extractEntry examples/partial/views/partials/partial2.html
+147 silly gunzTarPerm modified mode [ 'examples/partial/views/partials/partial2.html', 438, 420 ]
+148 silly gunzTarPerm extractEntry examples/partial/views/partials/partial3.html
+149 silly gunzTarPerm modified mode [ 'examples/partial/views/partials/partial3.html', 438, 420 ]
+150 silly gunzTarPerm extractEntry examples/partial/views/partials/partial4.hbs
+151 silly gunzTarPerm modified mode [ 'examples/partial/views/partials/partial4.hbs', 438, 420 ]
+152 silly gunzTarPerm extractEntry examples/partial/views/partials/partial5.hbs
+153 silly gunzTarPerm modified mode [ 'examples/partial/views/partials/partial5.hbs', 438, 420 ]
+154 silly gunzTarPerm extractEntry lib/async.js
+155 silly gunzTarPerm modified mode [ 'lib/async.js', 438, 420 ]
+156 silly gunzTarPerm extractEntry lib/hbs.js
+157 silly gunzTarPerm modified mode [ 'lib/hbs.js', 438, 420 ]
+158 silly gunzTarPerm extractEntry Readme.md
+159 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+160 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+161 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 438, 420 ]
+162 silly gunzTarPerm extractEntry src/blowfish.cc
+163 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 438, 420 ]
+164 silly gunzTarPerm extractEntry src/node_blf.h
+165 silly gunzTarPerm modified mode [ 'src/node_blf.h', 438, 420 ]
+166 silly gunzTarPerm extractEntry test/async.js
+167 silly gunzTarPerm modified mode [ 'test/async.js', 438, 420 ]
+168 silly gunzTarPerm extractEntry test/deprecated.js
+169 silly gunzTarPerm modified mode [ 'test/deprecated.js', 438, 420 ]
+170 silly gunzTarPerm extractEntry test/repetitions.js
+171 silly gunzTarPerm modified mode [ 'test/repetitions.js', 438, 420 ]
+172 silly gunzTarPerm extractEntry test/sync.js
+173 silly gunzTarPerm modified mode [ 'test/sync.js', 438, 420 ]
+174 silly gunzTarPerm extractEntry wscript
+175 silly gunzTarPerm modified mode [ 'wscript', 438, 420 ]
+176 silly lockFile d3f73b37-it-hawkeyeTV-node-modules-bcrypt tar://e:\Documents\git\hawkeyeTV\node_modules\bcrypt
+177 silly lockFile d3f73b37-it-hawkeyeTV-node-modules-bcrypt tar://e:\Documents\git\hawkeyeTV\node_modules\bcrypt
+178 silly lockFile d02ff2a1-m-cache-bcrypt-0-7-7-package-tgz tar://E:\AppData\npm-cache\bcrypt\0.7.7\package.tgz
+179 silly lockFile d02ff2a1-m-cache-bcrypt-0-7-7-package-tgz tar://E:\AppData\npm-cache\bcrypt\0.7.7\package.tgz
+180 silly lockFile 7ba92b97-s-git-hawkeyeTV-node-modules-hbs tar://e:\Documents\git\hawkeyeTV\node_modules\hbs
+181 silly lockFile 7ba92b97-s-git-hawkeyeTV-node-modules-hbs tar://e:\Documents\git\hawkeyeTV\node_modules\hbs
+182 info preinstall bcrypt@0.7.7
+183 silly lockFile 691ff6a3--npm-cache-hbs-2-4-0-package-tgz tar://E:\AppData\npm-cache\hbs\2.4.0\package.tgz
+184 silly lockFile 691ff6a3--npm-cache-hbs-2-4-0-package-tgz tar://E:\AppData\npm-cache\hbs\2.4.0\package.tgz
+185 verbose readDependencies using package.json deps
+186 verbose readDependencies using package.json deps
+187 info preinstall hbs@2.4.0
+188 verbose readDependencies using package.json deps
+189 verbose readDependencies using package.json deps
+190 verbose cache add [ 'bindings@1.0.0', null ]
+191 verbose cache add name=undefined spec="bindings@1.0.0" args=["bindings@1.0.0",null]
+192 verbose parsed url { protocol: null,
+192 verbose parsed url   slashes: null,
+192 verbose parsed url   auth: null,
+192 verbose parsed url   host: null,
+192 verbose parsed url   port: null,
+192 verbose parsed url   hostname: null,
+192 verbose parsed url   hash: null,
+192 verbose parsed url   search: null,
+192 verbose parsed url   query: null,
+192 verbose parsed url   pathname: 'bindings@1.0.0',
+192 verbose parsed url   path: 'bindings@1.0.0',
+192 verbose parsed url   href: 'bindings@1.0.0' }
+193 verbose cache add name="bindings" spec="1.0.0" args=["bindings","1.0.0"]
+194 verbose parsed url { protocol: null,
+194 verbose parsed url   slashes: null,
+194 verbose parsed url   auth: null,
+194 verbose parsed url   host: null,
+194 verbose parsed url   port: null,
+194 verbose parsed url   hostname: null,
+194 verbose parsed url   hash: null,
+194 verbose parsed url   search: null,
+194 verbose parsed url   query: null,
+194 verbose parsed url   pathname: '1.0.0',
+194 verbose parsed url   path: '1.0.0',
+194 verbose parsed url   href: '1.0.0' }
+195 verbose addNamed [ 'bindings', '1.0.0' ]
+196 verbose addNamed [ '1.0.0', '1.0.0' ]
+197 silly lockFile f01e5454-bindings-1-0-0 bindings@1.0.0
+198 verbose lock bindings@1.0.0 E:\AppData\npm-cache\f01e5454-bindings-1-0-0.lock
+199 verbose cache add [ 'handlebars@1.0.12', null ]
+200 verbose cache add name=undefined spec="handlebars@1.0.12" args=["handlebars@1.0.12",null]
+201 verbose parsed url { protocol: null,
+201 verbose parsed url   slashes: null,
+201 verbose parsed url   auth: null,
+201 verbose parsed url   host: null,
+201 verbose parsed url   port: null,
+201 verbose parsed url   hostname: null,
+201 verbose parsed url   hash: null,
+201 verbose parsed url   search: null,
+201 verbose parsed url   query: null,
+201 verbose parsed url   pathname: 'handlebars@1.0.12',
+201 verbose parsed url   path: 'handlebars@1.0.12',
+201 verbose parsed url   href: 'handlebars@1.0.12' }
+202 verbose cache add name="handlebars" spec="1.0.12" args=["handlebars","1.0.12"]
+203 verbose parsed url { protocol: null,
+203 verbose parsed url   slashes: null,
+203 verbose parsed url   auth: null,
+203 verbose parsed url   host: null,
+203 verbose parsed url   port: null,
+203 verbose parsed url   hostname: null,
+203 verbose parsed url   hash: null,
+203 verbose parsed url   search: null,
+203 verbose parsed url   query: null,
+203 verbose parsed url   pathname: '1.0.12',
+203 verbose parsed url   path: '1.0.12',
+203 verbose parsed url   href: '1.0.12' }
+204 verbose addNamed [ 'handlebars', '1.0.12' ]
+205 verbose addNamed [ '1.0.12', '1.0.12' ]
+206 silly lockFile 75f4e88f-handlebars-1-0-12 handlebars@1.0.12
+207 verbose lock handlebars@1.0.12 E:\AppData\npm-cache\75f4e88f-handlebars-1-0-12.lock
+208 verbose cache add [ 'walk@2.2.1', null ]
+209 verbose cache add name=undefined spec="walk@2.2.1" args=["walk@2.2.1",null]
+210 verbose parsed url { protocol: null,
+210 verbose parsed url   slashes: null,
+210 verbose parsed url   auth: null,
+210 verbose parsed url   host: null,
+210 verbose parsed url   port: null,
+210 verbose parsed url   hostname: null,
+210 verbose parsed url   hash: null,
+210 verbose parsed url   search: null,
+210 verbose parsed url   query: null,
+210 verbose parsed url   pathname: 'walk@2.2.1',
+210 verbose parsed url   path: 'walk@2.2.1',
+210 verbose parsed url   href: 'walk@2.2.1' }
+211 verbose cache add name="walk" spec="2.2.1" args=["walk","2.2.1"]
+212 verbose parsed url { protocol: null,
+212 verbose parsed url   slashes: null,
+212 verbose parsed url   auth: null,
+212 verbose parsed url   host: null,
+212 verbose parsed url   port: null,
+212 verbose parsed url   hostname: null,
+212 verbose parsed url   hash: null,
+212 verbose parsed url   search: null,
+212 verbose parsed url   query: null,
+212 verbose parsed url   pathname: '2.2.1',
+212 verbose parsed url   path: '2.2.1',
+212 verbose parsed url   href: '2.2.1' }
+213 verbose addNamed [ 'walk', '2.2.1' ]
+214 verbose addNamed [ '2.2.1', '2.2.1' ]
+215 silly lockFile cb57a3f3-walk-2-2-1 walk@2.2.1
+216 verbose lock walk@2.2.1 E:\AppData\npm-cache\cb57a3f3-walk-2-2-1.lock
+217 verbose url raw handlebars/1.0.12
+218 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars/1.0.12' ]
+219 verbose url resolved https://registry.npmjs.org/handlebars/1.0.12
+220 info trying registry request attempt 1 at 10:56:09
+221 verbose etag "9BZJOLMA6MWFFPK9CC5WUIR4O"
+222 http GET https://registry.npmjs.org/handlebars/1.0.12
+223 verbose url raw bindings/1.0.0
+224 verbose url resolving [ 'https://registry.npmjs.org/', './bindings/1.0.0' ]
+225 verbose url resolved https://registry.npmjs.org/bindings/1.0.0
+226 info trying registry request attempt 1 at 10:56:09
+227 verbose etag "8K98OB4X6MFFOACLX579JQDPQ"
+228 http GET https://registry.npmjs.org/bindings/1.0.0
+229 verbose url raw walk/2.2.1
+230 verbose url resolving [ 'https://registry.npmjs.org/', './walk/2.2.1' ]
+231 verbose url resolved https://registry.npmjs.org/walk/2.2.1
+232 info trying registry request attempt 1 at 10:56:09
+233 verbose etag "29AUUQRUIMT0ULPH97GIHM7P"
+234 http GET https://registry.npmjs.org/walk/2.2.1
+235 http 304 https://registry.npmjs.org/bindings/1.0.0
+236 silly registry.get cb [ 304,
+236 silly registry.get   { date: 'Mon, 10 Feb 2014 16:56:07 GMT',
+236 silly registry.get     server: 'Apache',
+236 silly registry.get     connection: 'Keep-Alive',
+236 silly registry.get     'keep-alive': 'timeout=10, max=50',
+236 silly registry.get     etag: '"8K98OB4X6MFFOACLX579JQDPQ"',
+236 silly registry.get     'cache-control': 'max-age=1',
+236 silly registry.get     vary: 'Accept' } ]
+237 verbose etag bindings/1.0.0 from cache
+238 silly lockFile f01e5454-bindings-1-0-0 bindings@1.0.0
+239 silly lockFile f01e5454-bindings-1-0-0 bindings@1.0.0
+240 http 304 https://registry.npmjs.org/handlebars/1.0.12
+241 silly registry.get cb [ 304,
+241 silly registry.get   { date: 'Mon, 10 Feb 2014 16:56:07 GMT',
+241 silly registry.get     server: 'Apache',
+241 silly registry.get     connection: 'Keep-Alive',
+241 silly registry.get     'keep-alive': 'timeout=10, max=50',
+241 silly registry.get     etag: '"9BZJOLMA6MWFFPK9CC5WUIR4O"',
+241 silly registry.get     'cache-control': 'max-age=1',
+241 silly registry.get     vary: 'Accept' } ]
+242 verbose etag handlebars/1.0.12 from cache
+243 silly resolved [ { name: 'bindings',
+243 silly resolved     description: 'Helper module for loading your native module\'s .node file',
+243 silly resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+243 silly resolved     version: '1.0.0',
+243 silly resolved     author:
+243 silly resolved      { name: 'Nathan Rajlich',
+243 silly resolved        email: 'nathan@tootallnate.net',
+243 silly resolved        url: 'http://tootallnate.net' },
+243 silly resolved     repository:
+243 silly resolved      { type: 'git',
+243 silly resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+243 silly resolved     main: './bindings.js',
+243 silly resolved     readme: 'node-bindings\n=============\n### Helper module for loading your native module\'s .node file\n\nThis is a helper module for authors of Node.js native addon modules.\nIt is basically the "swiss army knife" of `require()`ing your native module\'s\n`.node` file.\n\nThroughout the course of Node\'s native addon history, addons have ended up being\ncompiled in a variety of different places, depending on which build tool and which\nversion of node was used. To make matters worse, now the _gyp_ build tool can\nproduce either a _Release_ or _Debug_ build, each being built into different\nlocations.\n\nThis module checks _all_ the possible locations that a native addon would be built\nat, and returns the first one that loads successfully.\n\n\nInstallation\n------------\n\nInstall with `npm`:\n\n``` bash\n$ npm install bindings\n```\n\nOr add it to the `"dependencies"` section of your _package.json_ file.\n\n\nExample\n-------\n\n`require()`ing the proper bindings file for the current node version, platform\nand architecture is as simple as:\n\n``` js\nvar bindings = require(\'bindings\')(\'binding.node\')\n\n// Use your bindings defined in your C files\nbindings.your_c_function()\n```\n\n\nNice Error Output\n-----------------\n\nWhen the `.node` file could not be loaded, `node-bindings` throws an Error with\na nice error message telling you exactly what was tried. You can also check the\n`err.tries` Array property.\n\n```\nError: Could not load the bindings file. Tried:\n → /Users/nrajlich/ref/build/binding.node\n → /Users/nrajlich/ref/build/Debug/binding.node\n → /Users/nrajlich/ref/build/Release/binding.node\n → /Users/nrajlich/ref/out/Debug/binding.node\n → /Users/nrajlich/ref/Debug/binding.node\n → /Users/nrajlich/ref/out/Release/binding.node\n → /Users/nrajlich/ref/Release/binding.node\n → /Users/nrajlich/ref/build/default/binding.node\n → /Users/nrajlich/ref/compiled/0.8.2/darwin/x64/binding.node\n    at bindings (/Users/nrajlich/ref/node_modules/bindings/bindings.js:84:13)\n    at Object.<anonymous> (/Users/nrajlich/ref/lib/ref.js:5:47)\n    at Module._compile (module.js:449:26)\n    at Object.Module._extensions..js (module.js:467:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    ...\n```\n\n\nLicense\n-------\n\n(The MIT License)\n\nCopyright (c) 2012 Nathan Rajlich &lt;nathan@tootallnate.net&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+243 silly resolved     readmeFilename: 'README.md',
+243 silly resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+243 silly resolved     _id: 'bindings@1.0.0',
+243 silly resolved     _from: 'bindings@1.0.0' } ]
+244 info install bindings@1.0.0 into e:\Documents\git\hawkeyeTV\node_modules\bcrypt
+245 info installOne bindings@1.0.0
+246 info e:\Documents\git\hawkeyeTV\node_modules\bcrypt\node_modules\bindings unbuild
+247 verbose tar unpack E:\AppData\npm-cache\bindings\1.0.0\package.tgz
+248 silly lockFile c7e2b0bd-les-bcrypt-node-modules-bindings tar://e:\Documents\git\hawkeyeTV\node_modules\bcrypt\node_modules\bindings
+249 verbose lock tar://e:\Documents\git\hawkeyeTV\node_modules\bcrypt\node_modules\bindings E:\AppData\npm-cache\c7e2b0bd-les-bcrypt-node-modules-bindings.lock
+250 silly lockFile e742ea43-cache-bindings-1-0-0-package-tgz tar://E:\AppData\npm-cache\bindings\1.0.0\package.tgz
+251 verbose lock tar://E:\AppData\npm-cache\bindings\1.0.0\package.tgz E:\AppData\npm-cache\e742ea43-cache-bindings-1-0-0-package-tgz.lock
+252 silly gunzTarPerm modes [ '755', '644' ]
+253 silly gunzTarPerm extractEntry package.json
+254 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+255 silly lockFile 75f4e88f-handlebars-1-0-12 handlebars@1.0.12
+256 silly lockFile 75f4e88f-handlebars-1-0-12 handlebars@1.0.12
+257 silly gunzTarPerm extractEntry README.md
+258 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+259 silly gunzTarPerm extractEntry bindings.js
+260 silly gunzTarPerm modified mode [ 'bindings.js', 438, 420 ]
+261 silly lockFile c7e2b0bd-les-bcrypt-node-modules-bindings tar://e:\Documents\git\hawkeyeTV\node_modules\bcrypt\node_modules\bindings
+262 silly lockFile c7e2b0bd-les-bcrypt-node-modules-bindings tar://e:\Documents\git\hawkeyeTV\node_modules\bcrypt\node_modules\bindings
+263 silly lockFile e742ea43-cache-bindings-1-0-0-package-tgz tar://E:\AppData\npm-cache\bindings\1.0.0\package.tgz
+264 silly lockFile e742ea43-cache-bindings-1-0-0-package-tgz tar://E:\AppData\npm-cache\bindings\1.0.0\package.tgz
+265 info preinstall bindings@1.0.0
+266 verbose readDependencies using package.json deps
+267 verbose readDependencies using package.json deps
+268 silly resolved []
+269 verbose about to build e:\Documents\git\hawkeyeTV\node_modules\bcrypt\node_modules\bindings
+270 info build e:\Documents\git\hawkeyeTV\node_modules\bcrypt\node_modules\bindings
+271 verbose linkStuff [ false,
+271 verbose linkStuff   false,
+271 verbose linkStuff   false,
+271 verbose linkStuff   'e:\\Documents\\git\\hawkeyeTV\\node_modules\\bcrypt\\node_modules' ]
+272 info linkStuff bindings@1.0.0
+273 verbose linkBins bindings@1.0.0
+274 verbose linkMans bindings@1.0.0
+275 verbose rebuildBundles bindings@1.0.0
+276 info install bindings@1.0.0
+277 info postinstall bindings@1.0.0
+278 verbose about to build e:\Documents\git\hawkeyeTV\node_modules\bcrypt
+279 info build e:\Documents\git\hawkeyeTV\node_modules\bcrypt
+280 verbose linkStuff [ false,
+280 verbose linkStuff   false,
+280 verbose linkStuff   false,
+280 verbose linkStuff   'e:\\Documents\\git\\hawkeyeTV\\node_modules' ]
+281 info linkStuff bcrypt@0.7.7
+282 verbose linkBins bcrypt@0.7.7
+283 verbose linkMans bcrypt@0.7.7
+284 verbose rebuildBundles bcrypt@0.7.7
+285 verbose rebuildBundles [ 'bindings' ]
+286 info install bcrypt@0.7.7
+287 verbose unsafe-perm in lifecycle true
+288 http 304 https://registry.npmjs.org/walk/2.2.1
+289 silly registry.get cb [ 304,
+289 silly registry.get   { date: 'Mon, 10 Feb 2014 16:56:07 GMT',
+289 silly registry.get     server: 'Apache',
+289 silly registry.get     connection: 'Keep-Alive',
+289 silly registry.get     'keep-alive': 'timeout=10, max=50',
+289 silly registry.get     etag: '"29AUUQRUIMT0ULPH97GIHM7P"',
+289 silly registry.get     'cache-control': 'max-age=1',
+289 silly registry.get     vary: 'Accept' } ]
+290 verbose etag walk/2.2.1 from cache
+291 silly lockFile cb57a3f3-walk-2-2-1 walk@2.2.1
+292 silly lockFile cb57a3f3-walk-2-2-1 walk@2.2.1
+293 silly resolved [ { name: 'handlebars',
+293 silly resolved     description: 'Extension of the Mustache logicless template language',
+293 silly resolved     version: '1.0.12',
+293 silly resolved     homepage: 'http://www.handlebarsjs.com/',
+293 silly resolved     keywords: [ 'handlebars mustache template html' ],
+293 silly resolved     repository:
+293 silly resolved      { type: 'git',
+293 silly resolved        url: 'git://github.com/wycats/handlebars.js.git' },
+293 silly resolved     engines: { node: '>=0.4.7' },
+293 silly resolved     dependencies: { optimist: '~0.3', 'uglify-js': '~2.3' },
+293 silly resolved     devDependencies:
+293 silly resolved      { benchmark: '~1.0',
+293 silly resolved        dust: '~0.3',
+293 silly resolved        jison: '~0.3',
+293 silly resolved        mocha: '*',
+293 silly resolved        mustache: '~0.7.2' },
+293 silly resolved     main: 'lib/handlebars.js',
+293 silly resolved     bin: { handlebars: 'bin/handlebars' },
+293 silly resolved     scripts: { test: 'node_modules/.bin/mocha -u qunit spec/qunit_spec.js' },
+293 silly resolved     optionalDependencies: {},
+293 silly resolved     readme: '[![Build Status](https://travis-ci.org/wycats/handlebars.js.png?branch=master)](https://travis-ci.org/wycats/handlebars.js)\n\nHandlebars.js\n=============\n\nHandlebars.js is an extension to the [Mustache templating\nlanguage](http://mustache.github.com/) created by Chris Wanstrath.\nHandlebars.js and Mustache are both logicless templating languages that\nkeep the view and the code separated like we all know they should be.\n\nCheckout the official Handlebars docs site at\n[http://www.handlebarsjs.com](http://www.handlebarsjs.com).\n\n\nInstalling\n----------\nInstalling Handlebars is easy. Simply download the package [from the\nofficial site](http://handlebarsjs.com/) and add it to your web pages\n(you should usually use the most recent version).\n\nUsage\n-----\nIn general, the syntax of Handlebars.js templates is a superset\nof Mustache templates. For basic syntax, check out the [Mustache\nmanpage](http://mustache.github.com/mustache.5.html).\n\nOnce you have a template, use the `Handlebars.compile` method to compile\nthe template into a function. The generated function takes a context\nargument, which will be used to render the template.\n\n```js\nvar source = "<p>Hello, my name is {{name}}. I am from {{hometown}}. I have " +\n             "{{kids.length}} kids:</p>" +\n             "<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>";\nvar template = Handlebars.compile(source);\n\nvar data = { "name": "Alan", "hometown": "Somewhere, TX",\n             "kids": [{"name": "Jimmy", "age": "12"}, {"name": "Sally", "age": "4"}]};\nvar result = template(data);\n\n// Would render:\n// <p>Hello, my name is Alan. I am from Somewhere, TX. I have 2 kids:</p>\n// <ul>\n//   <li>Jimmy is 12</li>\n//   <li>Sally is 4</li>\n// </ul>\n```\n\n\nRegistering Helpers\n-------------------\n\nYou can register helpers that Handlebars will use when evaluating your\ntemplate. Here\'s an example, which assumes that your objects have a URL\nembedded in them, as well as the text for a link:\n\n```js\nHandlebars.registerHelper(\'link_to\', function() {\n  return "<a href=\'" + this.url + "\'>" + this.body + "</a>";\n});\n\nvar context = { posts: [{url: "/hello-world", body: "Hello World!"}] };\nvar source = "<ul>{{#posts}}<li>{{{link_to}}}</li>{{/posts}}</ul>"\n\nvar template = Handlebars.compile(source);\ntemplate(context);\n\n// Would render:\n//\n// <ul>\n//   <li><a href=\'/hello-world\'>Hello World!</a></li>\n// </ul>\n```\n\nHelpers take precedence over fields defined on the context. To access a field\nthat is masked by a helper, a path reference may be used. In the example above\na field named `link_to` on the `context` object would be referenced using:\n\n```\n{{./link_to}}\n```\n\nEscaping\n--------\n\nBy default, the `{{expression}}` syntax will escape its contents. This\nhelps to protect you against accidental XSS problems caused by malicious\ndata passed from the server as JSON.\n\nTo explicitly *not* escape the contents, use the triple-mustache\n(`{{{}}}`). You have seen this used in the above example.\n\n\nDifferences Between Handlebars.js and Mustache\n----------------------------------------------\nHandlebars.js adds a couple of additional features to make writing\ntemplates easier and also changes a tiny detail of how partials work.\n\n### Paths\n\nHandlebars.js supports an extended expression syntax that we call paths.\nPaths are made up of typical expressions and . characters. Expressions\nallow you to not only display data from the current context, but to\ndisplay data from contexts that are descendants and ancestors of the\ncurrent context.\n\nTo display data from descendant contexts, use the `.` character. So, for\nexample, if your data were structured like:\n\n```js\nvar data = {"person": { "name": "Alan" }, company: {"name": "Rad, Inc." } };\n```\n\nYou could display the person\'s name from the top-level context with the\nfollowing expression:\n\n```\n{{person.name}}\n```\n\nYou can backtrack using `../`. For example, if you\'ve already traversed\ninto the person object you could still display the company\'s name with\nan expression like `{{../company.name}}`, so:\n\n```\n{{#person}}{{name}} - {{../company.name}}{{/person}}\n```\n\nwould render:\n\n```\nAlan - Rad, Inc.\n```\n\n### Strings\n\nWhen calling a helper, you can pass paths or Strings as parameters. For\ninstance:\n\n```js\nHandlebars.registerHelper(\'link_to\', function(title, options) {\n  return "<a href=\'/posts" + this.url + "\'>" + title + "!</a>"\n});\n\nvar context = { posts: [{url: "/hello-world", body: "Hello World!"}] };\nvar source = \'<ul>{{#posts}}<li>{{{link_to "Post"}}}</li>{{/posts}}</ul>\'\n\nvar template = Handlebars.compile(source);\ntemplate(context);\n\n// Would render:\n//\n// <ul>\n//   <li><a href=\'/posts/hello-world\'>Post!</a></li>\n// </ul>\n```\n\nWhen you pass a String as a parameter to a helper, the literal String\ngets passed to the helper function.\n\n\n### Block Helpers\n\nHandlebars.js also adds the ability to define block helpers. Block\nhelpers are functions that can be called from anywhere in the template.\nHere\'s an example:\n\n```js\nvar source = "<ul>{{#people}}<li>{{#link}}{{name}}{{/link}}</li>{{/people}}</ul>";\nHandlebars.registerHelper(\'link\', function(options) {\n  return \'<a href="/people/\' + this.id + \'">\' + options.fn(this) + \'</a>\';\n});\nvar template = Handlebars.compile(source);\n\nvar data = { "people": [\n    { "name": "Alan", "id": 1 },\n    { "name": "Yehuda", "id": 2 }\n  ]};\ntemplate(data);\n\n// Should render:\n// <ul>\n//   <li><a href="/people/1">Alan</a></li>\n//   <li><a href="/people/2">Yehuda</a></li>\n// </ul>\n```\n\nWhenever the block helper is called it is given one or more parameters,\nany arguments that are passed in the helper in the call and an `options`\nobject containing the `fn` function which executes the block\'s child.\nThe block\'s current context may be accessed through `this`.\n\nBlock helpers have the same syntax as mustache sections but should not be\nconfused with one another. Sections are akin to an implicit `each` or\n`with` statement depending on the input data and helpers are explicit\npieces of code that are free to implement whatever behavior they like.\nThe [mustache spec](http://mustache.github.io/mustache.5.html)\ndefines the exact behavior of sections. In the case of name conflicts,\nhelpers are given priority.\n\n### Partials\n\nYou can register additional templates as partials, which will be used by\nHandlebars when it encounters a partial (`{{> partialName}}`). Partials\ncan either be String templates or compiled template functions. Here\'s an\nexample:\n\n```js\nvar source = "<ul>{{#people}}<li>{{> link}}</li>{{/people}}</ul>";\n\nHandlebars.registerPartial(\'link\', \'<a href="/people/{{id}}">{{name}}</a>\')\nvar template = Handlebars.compile(source);\n\nvar data = { "people": [\n    { "name": "Alan", "id": 1 },\n    { "name": "Yehuda", "id": 2 }\n  ]};\n\ntemplate(data);\n\n// Should render:\n// <ul>\n//   <li><a href="/people/1">Alan</a></li>\n//   <li><a href="/people/2">Yehuda</a></li>\n// </ul>\n```\n\n### Comments\n\nYou can add comments to your templates with the following syntax:\n\n```js\n{{! This is a comment }}\n```\n\nYou can also use real html comments if you want them to end up in the output.\n\n```html\n<div>\n    {{! This comment will not end up in the output }}\n    <!-- This comment will show up in the output -->\n</div>\n```\n\n\nPrecompiling Templates\n----------------------\n\nHandlebars allows templates to be precompiled and included as javascript\ncode rather than the handlebars template allowing for faster startup time.\n\n### Installation\nThe precompiler script may be installed via npm using the `npm install -g handlebars`\ncommand.\n\n### Usage\n\n<pre>\nPrecompile handlebar templates.\nUsage: handlebars template...\n\nOptions:\n  -a, --amd        Create an AMD format function (allows loading with RequireJS)         [boolean]\n  -f, --output     Output File                                                           [string]\n  -k, --known      Known helpers                                                         [string]\n  -o, --knownOnly  Known helpers only                                                    [boolean]\n  -m, --min        Minimize output                                                       [boolean]\n  -s, --simple     Output template function only.                                        [boolean]\n  -r, --root       Template root. Base value that will be stripped from template names.  [string]\n</pre>\n\nIf using the precompiler\'s normal mode, the resulting templates will be\nstored to the `Handlebars.templates` object using the relative template\nname sans the extension. These templates may be executed in the same\nmanner as templates.\n\nIf using the simple mode the precompiler will generate a single\njavascript method. To execute this method it must be passed to the using\nthe `Handlebars.template` method and the resulting object may be as\nnormal.\n\n### Optimizations\n\n- Rather than using the full _handlebars.js_ library, implementations that\n  do not need to compile templates at runtime may include _handlebars.runtime.js_\n  whose min+gzip size is approximately 1k.\n- If a helper is known to exist in the target environment they may be defined\n  using the `--known name` argument may be used to optimize accesses to these\n  helpers for size and speed.\n- When all helpers are known in advance the `--knownOnly` argument may be used\n  to optimize all block helper references.\n\nSupported Environments\n----------------------\n\nHandlebars has been designed to work in any ECMAScript 3 environment. This includes\n\n- Node.js\n- Chrome\n- Firefox\n- Safari 5+\n- Opera 11+\n- IE 6+\n\nOlder versions and other runtimes are likely to work but have not been formally\ntested.\n\nPerformance\n-----------\n\nIn a rough performance test, precompiled Handlebars.js templates (in\nthe original version of Handlebars.js) rendered in about half the\ntime of Mustache templates. It would be a shame if it were any other\nway, since they were precompiled, but the difference in architecture\ndoes have some big performance advantages. Justin Marney, a.k.a.\n[gotascii](http://github.com/gotascii), confirmed that with an\n[independent test](http://sorescode.com/2010/09/12/benchmarks.html). The\nrewritten Handlebars (current version) is faster than the old version,\nand we will have some benchmarks in the near future.\n\n\nBuilding\n--------\n\nTo build handlebars, just run `rake release`, and you will get two files\nin the `dist` directory.\n\n\nUpgrading\n---------\n\nSee [release-notes.md](https://github.com/wycats/handlebars.js/blob/master/release-notes.md) for upgrade notes.\n\nKnown Issues\n------------\n* Handlebars.js can be cryptic when there\'s an error while rendering.\n* Using a variable, helper, or partial named `class` causes errors in IE browsers. (Instead, use `className`)\n\nHandlebars in the Wild\n-----------------\n* [jblotus](http://github.com/jblotus) created [http://tryhandlebarsjs.com](http://tryhandlebarsjs.com)\n  for anyone who would like to try out Handlebars.js in their browser.\n* Don Park wrote an Express.js view engine adapter for Handlebars.js called\n  [hbs](http://github.com/donpark/hbs).\n* [sammy.js](http://github.com/quirkey/sammy) by Aaron Quint, a.k.a. quirkey,\n  supports Handlebars.js as one of its template plugins.\n* [SproutCore](http://www.sproutcore.com) uses Handlebars.js as its main\n  templating engine, extending it with automatic data binding support.\n* [Ember.js](http://www.emberjs.com) makes Handlebars.js the primary way to\n  structure your views, also with automatic data binding support.\n* Les Hill (@leshill) wrote a Rails Asset Pipeline gem named\n  [handlebars_assets](http://github.com/leshill/handlebars_assets).\n* [Gist about Synchronous and asynchronous loading of external handlebars templates](https://gist.github.com/2287070)\n* [Lumbar](walmartlabs.github.io/lumbar) provides easy module-based template management for handlebars projects.\n* [YUI](http://yuilibrary.com/yui/docs/handlebars/) implements a port of handlebars\n\nHave a project using Handlebars? Send us a [pull request](https://github.com/wycats/handlebars.js/pull/new/master)!\n\nHelping Out\n-----------\nTo build Handlebars.js you\'ll need a few things installed.\n\n* Node.js\n* Ruby\n* therubyracer, for running tests - `gem install therubyracer`\n* rspec, for running tests - `gem install rspec`\n\nThere\'s a Gemfile in the repo, so you can run `bundle` to install rspec\nand therubyracer if you\'ve got bundler installed.\n\nTo build Handlebars.js from scratch, you\'ll want to run `rake compile`\nin the root of the project. That will build Handlebars and output the\nresults to the dist/ folder. To run tests, run `rake test`. You can also\nrun our set of benchmarks with `rake bench`. Node tests can be run with\n`npm test` or `rake npm_test`. The default rake target will compile and\nrun both test suites.\n\nSome environments, notably Windows, have issues running therubyracer. Under these\nenvrionments the `rake compile` and `npm test` should be sufficient to test\nmost handlebars functionality.\n\nIf you notice any problems, please report them to the GitHub issue tracker at\n[http://github.com/wycats/handlebars.js/issues](http://github.com/wycats/handlebars.js/issues).\nFeel free to contact commondream or wycats through GitHub with any other\nquestions or feature requests. To submit changes fork the project and\nsend a pull request.\n\nLicense\n-------\nHandlebars.js is released under the MIT license.\n\n',
+293 silly resolved     readmeFilename: 'README.markdown',
+293 silly resolved     bugs: { url: 'https://github.com/wycats/handlebars.js/issues' },
+293 silly resolved     _id: 'handlebars@1.0.12',
+293 silly resolved     _from: 'handlebars@1.0.12' },
+293 silly resolved   { name: 'walk',
+293 silly resolved     description: 'A node port of python\'s os.walk',
+293 silly resolved     url: 'github.com/coolaj86/node-walk',
+293 silly resolved     keywords: [ 'util', 'os', 'sys', 'fs', 'walk', 'walkSync' ],
+293 silly resolved     author: { name: 'AJ ONeal', email: 'coolaj86@gmail.com' },
+293 silly resolved     contributors: [],
+293 silly resolved     dependencies: { forEachAsync: '~2.2' },
+293 silly resolved     lib: '.',
+293 silly resolved     main: './walk.js',
+293 silly resolved     version: '2.2.1',
+293 silly resolved     licenses: [ [Object], [Object] ],
+293 silly resolved     readme: 'ERROR: No README data found!',
+293 silly resolved     _id: 'walk@2.2.1',
+293 silly resolved     _from: 'walk@2.2.1' } ]
+294 info install handlebars@1.0.12 into e:\Documents\git\hawkeyeTV\node_modules\hbs
+295 info install walk@2.2.1 into e:\Documents\git\hawkeyeTV\node_modules\hbs
+296 info installOne handlebars@1.0.12
+297 info installOne walk@2.2.1
+298 info e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\handlebars unbuild
+299 info e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\walk unbuild
+300 verbose tar unpack E:\AppData\npm-cache\handlebars\1.0.12\package.tgz
+301 silly lockFile 7e4f8452-ules-hbs-node-modules-handlebars tar://e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\handlebars
+302 verbose lock tar://e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\handlebars E:\AppData\npm-cache\7e4f8452-ules-hbs-node-modules-handlebars.lock
+303 silly lockFile 5941ab3a-he-handlebars-1-0-12-package-tgz tar://E:\AppData\npm-cache\handlebars\1.0.12\package.tgz
+304 verbose lock tar://E:\AppData\npm-cache\handlebars\1.0.12\package.tgz E:\AppData\npm-cache\5941ab3a-he-handlebars-1-0-12-package-tgz.lock
+305 verbose tar unpack E:\AppData\npm-cache\walk\2.2.1\package.tgz
+306 silly lockFile 66abf855-de-modules-hbs-node-modules-walk tar://e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\walk
+307 verbose lock tar://e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\walk E:\AppData\npm-cache\66abf855-de-modules-hbs-node-modules-walk.lock
+308 silly lockFile b2893fb3-npm-cache-walk-2-2-1-package-tgz tar://E:\AppData\npm-cache\walk\2.2.1\package.tgz
+309 verbose lock tar://E:\AppData\npm-cache\walk\2.2.1\package.tgz E:\AppData\npm-cache\b2893fb3-npm-cache-walk-2-2-1-package-tgz.lock
+310 silly gunzTarPerm modes [ '755', '644' ]
+311 silly gunzTarPerm modes [ '755', '644' ]
+312 silly lockFile 7e4f8452-ules-hbs-node-modules-handlebars tar://e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\handlebars
+313 silly lockFile 7e4f8452-ules-hbs-node-modules-handlebars tar://e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\handlebars
+314 silly lockFile 5941ab3a-he-handlebars-1-0-12-package-tgz tar://E:\AppData\npm-cache\handlebars\1.0.12\package.tgz
+315 silly lockFile 5941ab3a-he-handlebars-1-0-12-package-tgz tar://E:\AppData\npm-cache\handlebars\1.0.12\package.tgz
+316 info e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\handlebars unbuild
+317 silly gunzTarPerm extractEntry package.json
+318 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+319 silly gunzTarPerm extractEntry node-type-emitter.js
+320 silly gunzTarPerm modified mode [ 'node-type-emitter.js', 438, 420 ]
+321 silly gunzTarPerm extractEntry walk-async-only.js
+322 silly gunzTarPerm modified mode [ 'walk-async-only.js', 438, 420 ]
+323 verbose about to build e:\Documents\git\hawkeyeTV\node_modules\hbs
+324 info e:\Documents\git\hawkeyeTV\node_modules\hbs unbuild
+325 info preuninstall hbs@2.4.0
+326 info uninstall hbs@2.4.0
+327 verbose true,e:\Documents\git\hawkeyeTV\node_modules,e:\Documents\git\hawkeyeTV\node_modules unbuild hbs@2.4.0
+328 info postuninstall hbs@2.4.0
+329 silly gunzTarPerm extractEntry walk.js
+330 silly gunzTarPerm modified mode [ 'walk.js', 438, 420 ]
+331 error Error: ENOENT, chmod 'e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\walk\walk-async-only.js'
+332 error If you need help, you may report this log at:
+332 error     <http://github.com/isaacs/npm/issues>
+332 error or email it to:
+332 error     <npm-@googlegroups.com>
+333 error System Windows_NT 6.1.7601
+334 error command "e:\\Program Files\\nodejs\\node.exe" "e:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+335 error cwd e:\Documents\git\hawkeyeTV
+336 error node -v v0.10.18
+337 error npm -v 1.3.8
+338 error path e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\walk\walk-async-only.js
+339 error fstream_path e:\Documents\git\hawkeyeTV\node_modules\hbs\node_modules\walk\walk-async-only.js
+340 error fstream_type File
+341 error fstream_class FileWriter
+342 error fstream_finish_call chmod
+343 error code ENOENT
+344 error errno 34
+345 error fstream_stack e:\Program Files\nodejs\node_modules\npm\node_modules\fstream\lib\writer.js:305:19
+345 error fstream_stack Object.oncomplete (fs.js:107:15)
+346 verbose exit [ 34, true ]

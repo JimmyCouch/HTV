@@ -1,0 +1,57 @@
+
+<div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="settings-title" id="settings-title">Settings</h4>
+            </div>
+        <div class="modal-body">
+        <div class="height:50px;">
+            <ul id="settings-errors" class="parsley-error-list"></ul>
+        </div>
+        <form id="settings-form" class="form" data-validate="parsley">
+            <fieldset>
+                <div class="control-group">
+                    <div class="controls">
+                        <input class="input-medium" id="zipcode-input"
+                        placeholder="5 digit zipcode" name="zipcode"
+                        value="" data-required="true" data-notblank="true" data-rangelength="[5,5]">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="control-group">Theme
+                    <div class="controls">
+                        <div class="btn-group" id="theme-input">
+                           <button type="button" id="th-btn" onClick="$('#th').val('default');" class="btn th btn-primary btn-sm bgBtn">Default</button>
+                           <button type="button" id="th-btn" onClick="$('#th').val('slate');" class="btn th btn-primary btn-sm bgBtn">Mountains</button>
+                           <button type="button" id="th-btn" onClick="$('#th').val('slate');" class="btn th btn-primary btn-sm bgBtn">UI</button>
+                        </div>
+                        <input name="th" id="th" type="hidden" value="">
+                    </div>
+                </div>
+                <div class="control-group">Facebook
+                    <div class="controls">
+                        <div class="btn-group" id="facebook-input">
+                            <!-- <a class="btn fb btn-primary btn-sm" href="/auth/facebook">Login</a> -->
+                            <a class="btn fb btn-primary btn-sm"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">Twitter
+                    <div class="controls">
+                        <div class="btn-group" id="twitter-input">
+                            <a class="btn tw btn-primary btn-sm" ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <a href="#" id="save-btn" class="btn btn-primary btn-sm" data-bypass>Save</a>
+                <a href="#" id="close-btn" class="btn btn-primary btn-sm" data-bypass>Close</a>
+            </fieldset>
+        </form>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>

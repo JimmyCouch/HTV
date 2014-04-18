@@ -1,0 +1,47 @@
+<div class="modal fade" id="youtube-control-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="title" id="youtube-control-title">Controls</h4>
+      </div>
+      <div class="modal-body">
+      	<button type="button" class="btn btn-primary btn-lg btn-block" id="playOrPause">Loading</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="closeModal">Close Video</button>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <button type="button" style="margin-top:10px;"class="btn btn-default" id="youtube-goHome" >Home</button>
+    <button type="button" style="margin-top:10px; float:right;"class="btn btn-default" id="youtube-newsearch">New Search</button>
+  </div>
+</nav>
+
+<div class="youtubeView">
+<div class="searchInput"></div>
+
+<div id="youtubeFrame"></div>
+
+<section class="slider">
+			<div class="list-wrapper">
+
+					<ul class="video span10">
+
+					</ul>
+			</div>
+</section>
+
+<div id="videoTpl" type="text/template" >
+	<li class="videoBlock " id="{{id}}">
+		<div class="tile col-sm-3" id="{{id}}">
+			<img class="tile-image" src="{{thumbnail}}" id="{{id}}"/>
+			<h4 class="tile-title">{{title}}</h4>
+			<p>Duration: {{duration}}</p>
+		</div>
+	</li>
+</div>
+
+</div>

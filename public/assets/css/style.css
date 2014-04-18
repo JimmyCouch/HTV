@@ -1,0 +1,315 @@
+body {
+
+ background-image:url('../img/default.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Audiowide';
+	src: url('../fonts/Audiowide-Regular.ttf') format('truetype');
+}
+
+#logo {
+	padding-left: 20px;
+}
+
+#apps {
+ 	position: absolute;
+  	left: -200px;
+	margin-top: 300px;
+}
+
+#logo-txt {
+	font-family: 'Audiowide';
+	color: #000000;
+	font-size: 46px;
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: 6.4pt;
+	line-height: 0.10;
+	padding: 15px;
+	padding-left: 20px;
+	text-shadow: 2px 0px 0px #BABABA;
+}
+
+.time-block{
+	width: 450px;
+	position: absolute;
+	left: 25px;
+	margin-top: 15px;
+}
+
+.forecast-block {
+	width: 600px;
+	height: 270px;
+	position: absolute;
+	margin-top: -35px;
+	right: 25px;
+}
+
+#time {
+	font-size: 50px;
+	line-height: .9;
+	font-family: 'Audiowide';
+	color: rgba(0, 0, 0, 0.4);
+}
+
+#selection-box {
+	height:150px;
+	width: 175px;
+}
+
+#chrome,#settings,#twitter,#facebook, #music, #youtube, #news, #home {
+	width: 140px; /* you can use % */
+    height: auto;
+}
+
+.blocks {
+	position: absolute;
+	top: 40%;
+    left: 25px;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.block {
+	margin-right: 28px;
+	float: left; width: 200px;
+}
+
+#selection-box.selected{
+	border-color: #000000;
+	border-style: solid;
+	border-width: 5px;
+	border-radius:10px;
+}
+.list-wrapper{
+	margin-right: auto;
+	margin-left: auto;
+	width: 700px;
+}
+
+img.tile-image {
+	/*margin-left: 60px;*/
+}
+
+ul.video {
+	margin-top: 50px;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 480px){
+  /* some css here */
+
+  #selection-box {
+  	height:130px;
+  	width:100%;
+  }
+
+	body {
+		background-image:url('../img/default.jpg');
+ 		background-repeat: no-repeat;
+ 		background-attachment: fixed;
+ 		background-position: center;
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+	}
+
+	img.tile-image {
+		width: 200px;
+	}
+
+	#mobile-logo {
+		font-family: 'Audiowide';
+		text-align: center;
+		vertical-align: middle;
+		line-height: 50px;
+		height: 50px;
+		width: 100%;
+		font-size: 200%;
+		color: #FDD017;
+		border-color: #000000;
+		background: #000000;
+	}
+
+	#app-table {
+		position: absolute;
+  		left: 6%;
+	}
+
+	#chrome,#youtube,#music,#settings,#facebook,#twitter, #news, #home {
+		width: 120px; /* you can use % */
+	    height: 120px;
+	    border-color: #000000;
+		border-style: solid;
+		border-width: 2.5px;
+		border-radius: 10px;
+	}
+
+	.list-wrapper {
+		margin-right: auto;
+		margin-left: auto;
+		width: 300px;
+	}
+
+}
+
+ul li{
+	display: inline;
+}
+
+
+#twitter-list {
+	width: 500px;
+	position: fixed;
+	right: 20px;
+	top: 200px;
+}
+
+#facebook-list {
+	width: 600px;
+	position: fixed;
+	right: 20px;
+	top: 200px;
+}
+
+.tweet-name{
+	display: inline-block;
+}
+
+.tweet-alias, .tweet-time, .tweet-retweet, .tweet-favorite {
+	display: inline-block;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+.tweet-retweet-image, .tweet-retweet-text, .tweet-favorite-image, .tweet-favorite-text {
+	display: inline-block;
+}
+
+.tweet-retweet, .tweet-favorite, .tweet-time {
+	float: right;
+}
+
+.twitter-photo {
+	position: relative;
+}
+
+.tweet-tweet {
+	float: right;
+	width: 85%;
+}
+
+.tweet-group {
+	padding-bottom: 5px;
+}
+
+
+.tile {
+	background-color: #ecf0f1;
+	border: 1px solid #d7e0e2;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 85%;
+}
+
+
+#rss-results{
+	margin-top: 100px;
+}
+
+#rss-image {
+	margin: 10px;
+}
+
+
+#rss-list {
+	width: 600px;
+	position: fixed;
+	right: 20px;
+	top: 200px;
+
+
+}
+
+
+
+#fb_list_item {
+
+    display: block;
+    overflow: hidden;
+}
+
+.fb_group1 {
+
+	float: left;
+	text-align: right;
+	padding: 7px 0 0 0;
+
+
+}
+
+.fb_group2 {
+
+	text-align: left;
+	padding: 0 0 0 10px;
+
+}
+
+
+.fb-icon-likes {
+	background-image: url('/assets/img/fb_sprite.png');
+	background-repeat: no-repeat;
+	background-position: 0 -40px;
+	display: inline-block;
+	height: 13px;
+	width: 15px;
+
+
+}
+.fb-icon-shares {
+	background-image: url('/assets/img/fb_sprite.png');
+	background-repeat: no-repeat;
+	background-position: -152px -5px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+
+
+
+
+}
+.fb-icon-comments {
+
+	background-image: url('/assets/img/fb_sprite.png');
+	background-repeat: no-repeat;
+	background-position: -135px -5px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+
+
+}
+
+.fb_span {
+	margin: 5px;
+	float: right;
+}
+
+#fb_footer {
+	overflow: auto;
+}
